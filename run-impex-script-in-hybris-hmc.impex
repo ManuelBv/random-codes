@@ -1,0 +1,53 @@
+UPDATE AbstractCMSComponent[batchmode=true];uid[unique=true];visible[default=false]
+;170710-ss17-generic-pre-home-banner-old
+;170710-ss17-generic-sale-landing-row-old
+;170710-ss17-ww-hp-banner-old
+;170710-ss17-mw-hp-banner-old
+;170710-ss17-ww-hp-main-html-old
+;170710-ss17-mw-hp-main-html-old
+;170710-ss17-ww-banner-row-old
+;170710-ss17-mw-banner-row-old
+;170710-ss17-ww-lhp-row-old
+;170710-ss17-mw-lhp-row-old
+
+UPDATE AbstractCMSComponent[batchmode=true];uid[unique=true];visible[default=true]
+;170710-ss17-generic-pre-home-banner-new
+;170710-ss17-generic-sale-landing-row-new
+;170710-ss17-ww-hp-banner-new
+;170710-ss17-mw-hp-banner-new
+;170710-ss17-ww-hp-main-html-new
+;170710-ss17-mw-hp-main-html-new
+;170710-ss17-ww-banner-row-new
+;170710-ss17-mw-banner-row-new
+;170710-ss17-ww-lhp-row-new
+;170710-ss17-mw-lhp-row-new
+
+$lang=en
+$contentCatalog=mfContentCatalog
+$stagedContentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$onlineContentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Online])[default=$contentCatalog:Online]
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $stagedContentCV);$stagedContentCV[unique=true]
+;MenSaleBarComponent    ;SS17-Sale-up-to-70-MW-Meganav-ROW-en
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $onlineContentCV);$onlineContentCV[unique=true]
+;MenSaleBarComponent    ;SS17-Sale-up-to-70-MW-Meganav-ROW-en
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $stagedContentCV);$stagedContentCV[unique=true]
+;WomenSaleBarComponent    ;SS17-Sale-up-to-70-WW-Meganav-ROW-en
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $onlineContentCV);$onlineContentCV[unique=true]
+;WomenSaleBarComponent    ;SS17-Sale-up-to-70-WW-Meganav-ROW-en
+
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $stagedContentCV);$stagedContentCV[unique=true]
+;MenSaleFRBarComponent    ;SS17-Sale-up-to-70-MW-Meganav-ROW-fr
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $onlineContentCV);$onlineContentCV[unique=true]
+;MenSaleFRBarComponent    ;SS17-Sale-up-to-70-MW-Meganav-ROW-fr
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $stagedContentCV);$stagedContentCV[unique=true]
+;WomenSaleFRBarComponent    ;SS17-Sale-up-to-70-WW-Meganav-ROW-fr
+
+UPDATE NavigationBarComponent[batchmode=true];uid[unique=true];externalContent(uid, $onlineContentCV);$onlineContentCV[unique=true]
+;WomenSaleFRBarComponent    ;SS17-Sale-up-to-70-WW-Meganav-ROW-fr
