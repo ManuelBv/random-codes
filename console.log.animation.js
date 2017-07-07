@@ -1,3 +1,5 @@
+//docs for this console.log with CSS stuff - https://developer.mozilla.org/en-US/docs/Web/API/console#Outputting_text_to_the_console
+
 let spacing = " ";
 let timeStep = 33;
 let runs = 150;
