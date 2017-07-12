@@ -1,8 +1,8 @@
 //docs for this console.log with CSS stuff - https://developer.mozilla.org/en-US/docs/Web/API/console#Outputting_text_to_the_console
 
 let spacing = " ";
-let timeStep = 33;
-let runs = 150;
+let timeStep = 133;
+let runs = 100;
 
 function for1(){
 for (let i = 1; i < runs; i++) {
