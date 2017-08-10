@@ -1,0 +1,6 @@
+
+/* select the last one ONLY if it is an odd number*/
+
+.mf-sc__look-inner > .mf-sc__look-wrapper:nth-last-child(1):not(:nth-of-type(2n)) {
+  border-left: solid 1px red;
+}
