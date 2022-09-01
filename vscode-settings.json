@@ -1,0 +1,44 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "redhat.telemetry.enabled": false,
+  "search.exclude": {
+    "**/node_modules/*": true
+  },
+  "files.exclude": {
+    "**/node_modules/*": true
+  },
+  "files.associations": {
+    "*.env": "properties",
+    "*.env.*": "properties"
+  },
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "editor.codeActionsOnSave": {
+  "source.fixAll": true
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "prettier.vueIndentScriptAndStyle": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
